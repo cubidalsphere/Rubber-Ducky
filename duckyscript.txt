@@ -51,5 +51,5 @@ DELAY 200
 STRING rmdir "C:\l"
 DELAY 150
 STRING exit
-
+ENTER
 
